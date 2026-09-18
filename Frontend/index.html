@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iraianbu's AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="app">
+ 
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Iraianbu's AI</h1>
+        <p class="brand-subtitle">Powered by Gemini API</p>
+      </div>
+ 
+      <button type="button" id="history-button" class="history-toggle-btn">
+        View History
+      </button>
+ 
+      <div id="history-panel" class="history-panel hidden">
+        <!-- Past generations will be added here dynamically by script.js -->
+      </div>
+    </aside>
+ 
+    <!-- Main content -->
+    <main class="main">
+      <div id="chat-window" class="chat-window">
+        <!-- Messages will be added here dynamically by script.js -->
+      </div>
+ 
+      <div class="chat-form">
+        <select id="content-type">
+          <option value="linkedin">LinkedIn Post</option>
+          <option value="instagram">Instagram Caption</option>
+          <option value="blog">Blog Intro</option>
+        </select>
+ 
+        <input
+          type="text"
+          id="user-input"
+          placeholder="What's the topic?"
+          autocomplete="off"
+          required
+        >
+        <button type="button" id="send-button">Generate</button>
+      </div>
+    </main>
+ 
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
